@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petro Arkan & Kia Petro | Energy, Petrochemical & Mineral Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            accent: '#f59e0b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(12px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 3px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #0284c7;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-accent flex items-center justify-center font-bold text-xl text-white shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+                    PK
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">PETRO ARKAN</span>
+                    <span class="text-xs block text-brand-accent font-semibold tracking-widest uppercase">& KIA PETRO JOINT OPERATIONS</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#overview" class="text-slate-300 hover:text-brand-accent transition-colors">Overview</a>
+                <a href="#portfolio" class="text-slate-300 hover:text-brand-accent transition-colors">Products</a>
+                <a href="#matrix" class="text-slate-300 hover:text-brand-accent transition-colors">Master Matrix</a>
+                <a href="#markets" class="text-slate-300 hover:text-brand-accent transition-colors">Global Markets</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm transition-all shadow-md shadow-brand-600/30 hover:shadow-brand-500/50">
+                    Request Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#overview" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-accent">Overview</a>
+            <a href="#portfolio" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-accent">Products</a>
+            <a href="#matrix" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-accent">Master Matrix</a>
+            <a href="#markets" class="mobile-nav-link block py-2 text-slate-300 hover:text-brand-accent">Global Markets</a>
+            <a href="#contact" class="mobile-nav-link block w-full text-center py-2.5 mt-2 rounded-lg bg-brand-600 text-white font-semibold">Request Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-500 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i class="fa-solid fa-shield-halved"></i> Global Joint Commercial Operations
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                    Technical & Commercial Portfolio of <span class="bg-gradient-to-r from-brand-500 via-blue-400 to-brand-accent bg-clip-text text-transparent">Energy & Chemicals</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-400 leading-relaxed mb-8">
+                    Comprehensive technical specifications, HS codes, global export target markets, and industrial applications across the joint product lineup of Petro Arkan & Kia Petro.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#portfolio" class="px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-base transition-all shadow-lg shadow-brand-600/30 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-boxes-stacked"></i> Explore Products
+                    </a>
+                    <a href="#matrix" class="px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-base transition-all border border-slate-700 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-table"></i> Master Summary Matrix
+                    </a>
+                </div>
+            </div>
+
+            <!-- Key Metrics Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-16 pt-12 border-t border-slate-800/80">
+                <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                    <div class="text-3xl font-extrabold text-brand-500 mb-1">8+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Core Product Lines</div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                    <div class="text-3xl font-extrabold text-brand-accent mb-1">99.5%+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">High Purity Assurance</div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                    <div class="text-3xl font-extrabold text-blue-400 mb-1">30+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Global Import Markets</div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">ISO / ASTM</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Certified Testing Standards</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-16 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-4">Strategic Commercial Synergies</h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        The joint commercial operations of <strong>Petro Arkan</strong> and <strong>Kia Petro</strong> unite extensive refinery capabilities and chemical processing power. We supply essential commodities across energy, infrastructure, agricultural, and manufacturing sectors worldwide.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-vial"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Rigorous Technical Standards</h3>
+                                <p class="text-sm text-slate-400">Strict adherence to ASTM, EN, and ISO testing protocols for all bitumen, chemical, and fertilizer batches.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-accent/10 text-brand-accent flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-white">Global Logistics & Export Capabilities</h3>
+                                <p class="text-sm text-slate-400">Robust supply routes servicing Asia-Pacific, MENA, Europe, Latin America, and African trade corridors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border border-slate-700 shadow-2xl relative">
+                    <h3 class="text-xl font-bold text-white mb-6 border-b border-slate-700 pb-4">Portfolio Sectors</h3>
+                    <div class="space-y-3">
+                        <div class="p-3.5 rounded-lg bg-slate-950/60 flex items-center justify-between border border-slate-800">
+                            <span class="text-slate-200 font-medium"><i class="fa-solid fa-road text-amber-500 mr-3"></i>Bitumen & Road Infrastructure</span>
+                            <span class="text-xs text-brand-accent bg-brand-accent/10 px-2.5 py-1 rounded-full">Paving Grades</span>
+                        </div>
+                        <div class="p-3.5 rounded-lg bg-slate-950/60 flex items-center justify-between border border-slate-800">
+                            <span class="text-slate-200 font-medium"><i class="fa-solid fa-oil-can text-blue-400 mr-3"></i>Base Oils & Lubricants</span>
+                            <span class="text-xs text-blue-400 bg-blue-400/10 px-2.5 py-1 rounded-full">Virgin & Recycled Grades</span>
+                        </div>
+                        <div class="p-3.5 rounded-lg bg-slate-950/60 flex items-center justify-between border border-slate-800">
+                            <span class="text-slate-200 font-medium"><i class="fa-solid fa-seedling text-emerald-400 mr-3"></i>Agrochemicals & Nitrogen</span>
+                            <span class="text-xs text-emerald-400 bg-emerald-400/10 px-2.5 py-1 rounded-full">Urea & Sulfur</span>
+                        </div>
+                        <div class="p-3.5 rounded-lg bg-slate-950/60 flex items-center justify-between border border-slate-800">
+                            <span class="text-slate-200 font-medium"><i class="fa-solid fa-flask text-purple-400 mr-3"></i>Inorganic Industrial Chemicals</span>
+                            <span class="text-xs text-purple-400 bg-purple-400/10 px-2.5 py-1 rounded-full">Alkalis & Salts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Product Catalog -->
+    <section id="portfolio" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">Complete Technical Portfolio</h2>
+                <p class="text-slate-400 text-lg">Detailed specifications, industrial applications, and export market data for every product grade in our combined portfolio.</p>
+            </div>
+
+            <!-- Product Cards Stack -->
+            <div class="space-y-16">
+
+                <!-- 1. Bitumen -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl" id="bitumen">
+                    <div class="p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center text-2xl font-bold">
+                                <i class="fa-solid fa-road"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">1. Bitumen / Asphalt Binders</h3>
+                                <p class="text-sm text-slate-400">Paving & Industrial Penetration Grades</p>
+                            </div>
+                        </div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-amber-400 font-mono text-sm">HS Code: 2713.20</span>
+                    </div>
+
+                    <div class="p-6 sm:p-8 space-y-8">
+                        <div>
+                            <h4 class="text-sm uppercase tracking-wider text-slate-400 font-semibold mb-3">Technical Data Sheet & Key Parameters</h4>
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-xs text-slate-500">Solubility in CS₂</div>
+                                    <div class="text-slate-200 font-semibold mt-1">≥ 99.0% - 99.5% wt</div>
+                                    <div class="text-xs text-slate-400 mt-0.5">ASTM D4 / EN 12592</div>
+                                </div>
+                                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-xs text-slate-500">Flash Point (COC)</div>
+                                    <div class="text-slate-200 font-semibold mt-1">≥ 220°C - 250°C</div>
+                                    <div class="text-xs text-slate-400 mt-0.5">ASTM D92 / EN ISO 2592</div>
+                                </div>
+                                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-xs text-slate-500">Ductility @ 25°C</div>
+                                    <div class="text-slate-200 font-semibold mt-1">≥ 100 cm</div>
+                                    <div class="text-xs text-slate-400 mt-0.5">ASTM D113</div>
+                                </div>
+                                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                    <div class="text-xs text-slate-500">Thin Film Oven Test (TFOT)</div>
+                                    <div class="text-slate-200 font-semibold mt-1">Mass Loss ≤ 0.2% - 1.0%</div>
+                                    <div class="text-xs text-slate-400 mt-0.5">Retained Pen ≥ 50%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bitumen Table -->
+                        <div>
+                            <h4 class="text-sm uppercase tracking-wider text-slate-400 font-semibold mb-3">Grade Specifications Matrix</h4>
+                            <div class="overflow-x-auto custom-scrollbar">
+                                <table class="w-full text-left text-sm text-slate-300 border-collapse">
+                                    <thead class="bg-slate-950 text-slate-400 uppercase text-xs">
+                                        <tr>
+                                            <th class="p-3 border-b border-slate-800">Grade</th>
+                                            <th class="p-3 border-b border-slate-800">Penetration @ 25°C (dmm)</th>
+                                            <th class="p-3 border-b border-slate-800">Softening Point (°C)</th>
+                                            <th class="p-3 border-b border-slate-800">Specific Density @ 25°C</th>
+                                            <th class="p-3 border-b border-slate-800">Primary Applications</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-800/60">
+                                        <tr><td class="p-3 font-semibold text-white">40/50</td><td class="p-3">40 – 50</td><td class="p-3">52 – 60</td><td class="p-3">1.010 – 1.060</td><td class="p-3 text-slate-400">High-traffic pavements, warm climates, heavy-duty roads</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">40/60 (EN 12591)</td><td class="p-3">40 – 60</td><td class="p-3">48 – 56</td><td class="p-3">~1.010 – 1.060</td><td class="p-3 text-slate-400">European-standard highways, arterial roads, runways</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">50/70</td><td class="p-3">50 – 70</td><td class="p-3">46 – 54</td><td class="p-3">1.010 – 1.060</td><td class="p-3 text-slate-400">Balanced paving grade, binder courses, Stone Mastic Asphalt</td></tr>
+                                        <tr class="bg-brand-500/5"><td class="p-3 font-semibold text-brand-400">60/70 (Benchmark)</td><td class="p-3">60 – 70</td><td class="p-3">49 – 56</td><td class="p-3">1.010 – 1.060</td><td class="p-3 text-slate-300">Global benchmark paving binder; Hot-Mix Asphalt (HMA)</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">70/100</td><td class="p-3">70 – 100</td><td class="p-3">42 – 51</td><td class="p-3">1.000 – 1.050</td><td class="p-3 text-slate-400">Moderate-to-cool climates, secondary roads, overlays</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">80/100</td><td class="p-3">80 – 100</td><td class="p-3">41 – 48</td><td class="p-3">1.000 – 1.050</td><td class="p-3 text-slate-400">Cold climate paving, cold-mix, emulsion feedstock</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">100/120</td><td class="p-3">100 – 120</td><td class="p-3">42 – 49</td><td class="p-3">1.010 – 1.040</td><td class="p-3 text-slate-400">Flexible pavements, road maintenance, waterproofing</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">120/150</td><td class="p-3">120 – 150</td><td class="p-3">38 – 42</td><td class="p-3">1.000 – 1.040</td><td class="p-3 text-slate-400">Cold regions, surface dressing, soft asphalt mixtures</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">200/300</td><td class="p-3">200 – 300</td><td class="p-3">30 – 37</td><td class="p-3">1.000 – 1.050</td><td class="p-3 text-slate-400">Soft binder, emulsion base, dust palliatives</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 pt-2">
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-industry text-amber-500 mr-2"></i>Industrial Applications</h5>
+                                <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                                    <li>Hot-Mix Asphalt (HMA) for highways, airport runways, and urban expressways</li>
+                                    <li>Waterproofing membranes, roofing felt saturants, and sealants</li>
+                                    <li>Bitumen emulsions, cutbacks, and polymer-modified asphalt (PMA) feedstocks</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-globe text-brand-500 mr-2"></i>Target Export Markets</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    India, China, Vietnam, Indonesia, UAE, Oman, Kenya, Tanzania, Nigeria, South Africa, CIS countries, Central America, and Southern Europe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Base Oils -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl" id="base-oils">
+                    <div class="p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center text-2xl font-bold">
+                                <i class="fa-solid fa-oil-can"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">2. Base Oils (Virgin & Recycled)</h3>
+                                <p class="text-sm text-slate-400">Virgin Group I & High-Quality Eco-Friendly Recycled Base Stocks</p>
+                            </div>
+                        </div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-blue-400 font-mono text-sm">HS Code: 2710.19.91</span>
+                    </div>
+
+                    <div class="p-6 sm:p-8 space-y-8">
+                        <div>
+                            <h4 class="text-sm uppercase tracking-wider text-blue-400 font-semibold mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-vial"></i> Virgin Group I Specifications Matrix
+                            </h4>
+                            <div class="overflow-x-auto custom-scrollbar">
+                                <table class="w-full text-left text-sm text-slate-300 border-collapse">
+                                    <thead class="bg-slate-950 text-slate-400 uppercase text-xs">
+                                        <tr>
+                                            <th class="p-3 border-b border-slate-800">Grade</th>
+                                            <th class="p-3 border-b border-slate-800">Viscosity @ 40°C (cSt)</th>
+                                            <th class="p-3 border-b border-slate-800">Viscosity @ 100°C (cSt)</th>
+                                            <th class="p-3 border-b border-slate-800">Viscosity Index (VI)</th>
+                                            <th class="p-3 border-b border-slate-800">Flash Point (°C)</th>
+                                            <th class="p-3 border-b border-slate-800">Pour Point (°C)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-800/60">
+                                        <tr><td class="p-3 font-semibold text-white">Virgin SN 150</td><td class="p-3">28 – 32</td><td class="p-3">5.0 – 5.5</td><td class="p-3">≥ 95</td><td class="p-3">≥ 200°C</td><td class="p-3">≤ -6°C</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">Virgin SN 350</td><td class="p-3">65 – 75</td><td class="p-3">8.5 – 9.5</td><td class="p-3">≥ 95</td><td class="p-3">≥ 215°C</td><td class="p-3">≤ -6°C</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">Virgin SN 500</td><td class="p-3">90 – 100</td><td class="p-3">10.5 – 11.5</td><td class="p-3">≥ 95</td><td class="p-3">≥ 220°C</td><td class="p-3">≤ -6°C</td></tr>
+                                        <tr><td class="p-3 font-semibold text-white">Bright Stock (BS 150)</td><td class="p-3">450 – 500</td><td class="p-3">30.0 – 32.0</td><td class="p-3">≥ 95</td><td class="p-3">≥ 280°C</td><td class="p-3">≤ -3°C</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Recycled Base Oil Specifications -->
+                        <div>
+                            <h4 class="text-sm uppercase tracking-wider text-emerald-400 font-semibold mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-recycle"></i> Recycled Base Oil Specifications Matrix
+                            </h4>
+                            <div class="overflow-x-auto custom-scrollbar">
+                                <table class="w-full text-left text-sm text-slate-300 border-collapse">
+                                    <thead class="bg-slate-950 text-slate-400 uppercase text-xs">
+                                        <tr>
+                                            <th class="p-3 border-b border-slate-800">Grade</th>
+                                            <th class="p-3 border-b border-slate-800">Appearance</th>
+                                            <th class="p-3 border-b border-slate-800">Viscosity @ 100°C (cSt)</th>
+                                            <th class="p-3 border-b border-slate-800">Flash Point (°C)</th>
+                                            <th class="p-3 border-b border-slate-800">Pour Point (°C)</th>
+                                            <th class="p-3 border-b border-slate-800">Color (ASTM D1500)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-800/60">
+                                        <tr>
+                                            <td class="p-3 font-semibold text-white">Recycle Base Oil SN150</td>
+                                            <td class="p-3 text-slate-400">Clear & Bright (C&B)</td>
+                                            <td class="p-3">4 – 8 cSt (40–60 @ 40°C)</td>
+                                            <td class="p-3">170 – 185°C</td>
+                                            <td class="p-3">≤ -3°C</td>
+                                            <td class="p-3">1.5 – 2.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-semibold text-white">Recycled Oil SN350</td>
+                                            <td class="p-3 text-slate-400">Clear & Bright (C&B)</td>
+                                            <td class="p-3">7 – 9 cSt</td>
+                                            <td class="p-3">195 – 205°C</td>
+                                            <td class="p-3">-3 to 0°C</td>
+                                            <td class="p-3">1.5 – 2.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-semibold text-white">Recycled Base Oil SN500</td>
+                                            <td class="p-3 text-slate-400">Clear & Bright (C&B)</td>
+                                            <td class="p-3">8 – 9 cSt</td>
+                                            <td class="p-3">210 – 230°C</td>
+                                            <td class="p-3">-3 to 0°C</td>
+                                            <td class="p-3">1.5 – 2.5 (875–885 kg/m³)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-gears text-blue-400 mr-2"></i>Applications & Lubricants</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Automotive engine lubricants, cost-effective industrial gear oils, hydraulic fluids, chain lubricants, rubber processing oils, and general-purpose industrial greases.
+                                </p>
+                            </div>
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-earth-asia text-brand-500 mr-2"></i>Key Export Markets</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    India, UAE, Turkey, Pakistan, Egypt, Singapore, Thailand, Malaysia, Central Asia, and East African industrial hubs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Urea -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl" id="urea">
+                    <div class="p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center text-2xl font-bold">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">3. Urea Granular & Prilled</h3>
+                                <p class="text-sm text-slate-400">Agricultural & Industrial Grade (46% Nitrogen)</p>
+                            </div>
+                        </div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-emerald-400 font-mono text-sm">HS Code: 3102.10</span>
+                    </div>
+
+                    <div class="p-6 sm:p-8 space-y-8">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Nitrogen Content</div>
+                                <div class="text-slate-200 font-semibold mt-1">≥ 46.0% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">High Purity Standard</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Biuret Content</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 1.0% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">(≤ 0.8% for Prilled)</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Moisture (H₂O)</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 0.5% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Karl Fischer Method</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Particle Size</div>
+                                <div class="text-slate-200 font-semibold mt-1">2.0 – 4.75 mm</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Granular (90%+ min)</div>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-wheat-awn text-emerald-400 mr-2"></i>Applications & Usage</h5>
+                                <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                                    <li>Primary direct-application nitrogenous fertilizer for global agriculture</li>
+                                    <li>Diesel Exhaust Fluid / AdBlue feedstock (pure low-biuret urea)</li>
+                                    <li>Urea-Formaldehyde resins for plywood, particleboard, and adhesive synthesis</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-earth-africa text-brand-500 mr-2"></i>Target Export Markets</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    India, Brazil, Turkey, Vietnam, Thailand, Ethiopia, Kenya, Latin America, and Southeast Asia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Elemental Sulfur -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl" id="sulfur">
+                    <div class="p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center text-2xl font-bold">
+                                <i class="fa-solid fa-cubes-stacked"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">4. Elemental Sulfur (Granular / Lumps)</h3>
+                                <p class="text-sm text-slate-400">High-Purity Petrochemical Recovery Sulfur</p>
+                            </div>
+                        </div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-yellow-400 font-mono text-sm">HS Code: 2503.00</span>
+                    </div>
+
+                    <div class="p-6 sm:p-8 space-y-8">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Sulfur Purity (Dry)</div>
+                                <div class="text-slate-200 font-semibold mt-1">≥ 99.5% - 99.8% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Ultra-bright yellow</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Ash Content</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 0.05% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Low residue</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Hydrocarbons</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 0.05% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Refinery treated</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Moisture Content</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 0.5% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Free flowing</div>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-vial-circle-check text-yellow-400 mr-2"></i>Applications</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Sulfuric acid (H₂SO₄) production, phosphate fertilizer processing (DAP/MAP), rubber vulcanization, gunpowder manufacture, insecticides, and chemical synthesis.
+                                </p>
+                            </div>
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-ship text-brand-500 mr-2"></i>Target Export Markets</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    China, India, North Africa (Morocco, Tunisia), South Africa, Jordan, and South America.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Caustic Soda -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl" id="caustic-soda">
+                    <div class="p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl font-bold">
+                                <i class="fa-solid fa-flask"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">5. Caustic Soda (NaOH Flakes & Lye 50%)</h3>
+                                <p class="text-sm text-slate-400">Sodium Hydroxide Chlor-Alkali Industry Standard</p>
+                            </div>
+                        </div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-purple-400 font-mono text-sm">HS Code: 2815.11 / 2815.12</span>
+                    </div>
+
+                    <div class="p-6 sm:p-8 space-y-8">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Flakes Purity (NaOH)</div>
+                                <div class="text-slate-200 font-semibold mt-1">≥ 98.5% - 99.0% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">White hygroscopic flakes</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Liquid Lye Concentration</div>
+                                <div class="text-slate-200 font-semibold mt-1">48.0% - 50.0% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Aqueous Solution</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Sodium Carbonate (Na₂CO₃)</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 0.4% - 0.6% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Low carbonate impurities</div>
+                            </div>
+                            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                                <div class="text-xs text-slate-500">Sodium Chloride (NaCl)</div>
+                                <div class="text-slate-200 font-semibold mt-1">≤ 0.03% - 0.1% wt</div>
+                                <div class="text-xs text-slate-400 mt-0.5">Chlor-alkali grade</div>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-industry text-purple-400 mr-2"></i>Applications</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Alumina refining (Bayer Process), pulp and paper bleaching, soap and detergent saponification, water treatment, petroleum refining, and textile processing.
+                                </p>
+                            </div>
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-globe text-brand-500 mr-2"></i>Target Export Markets</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Middle East, India, Turkey, Central Asia, East Africa, West Africa, and Southeast Asia.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Soda Ash -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl" id="soda-ash">
+                    <div class="p-6 sm:p-8 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex flex-wrap items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl font-bold">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">6. Soda Ash (Light & Dense)</h3>
+                                <p class="text-sm text-slate-400">Sodium Carbonate (Na₂CO₃)</p>
+                            </div>
+                        </div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-teal-400 font-mono text-sm">HS Code: 2836.20</span>
+                    </div>
+
+                    <div class="p-6 sm:p-8 space-y-8">
+                        <div class="overflow-x-auto custom-scrollbar">
+                            <table class="w-full text-left text-sm text-slate-300 border-collapse">
+                                <thead class="bg-slate-950 text-slate-400 uppercase text-xs">
+                                    <tr>
+                                        <th class="p-3 border-b border-slate-800">Parameter</th>
+                                        <th class="p-3 border-b border-slate-800">Soda Ash Light</th>
+                                        <th class="p-3 border-b border-slate-800">Soda Ash Dense</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-800/60">
+                                    <tr><td class="p-3 font-semibold text-white">Na₂CO₃ Purity</td><td class="p-3">≥ 99.2% wt</td><td class="p-3">≥ 99.2% wt</td></tr>
+                                    <tr><td class="p-3 font-semibold text-white">Bulk Density</td><td class="p-3">0.50 – 0.65 g/cm³</td><td class="p-3">0.90 – 1.15 g/cm³</td></tr>
+                                    <tr><td class="p-3 font-semibold text-white">NaCl Content</td><td class="p-3">≤ 0.70% wt</td><td class="p-3">≤ 0.70% wt</td></tr>
+                                    <tr><td class="p-3 font-semibold text-white">Fe₂O₃ Content</td><td class="p-3">≤ 0.004% wt</td><td class="p-3">≤ 0.003% wt</td></tr>
+                                    <tr><td class="p-3 font-semibold text-white">Primary Uses</td><td class="p-3 text-slate-400">Detergents, chemicals, water softening</td><td class="p-3 text-slate-400">Flat glass, container glass, fiberglass</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-glasses text-teal-400 mr-2"></i>Applications</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Flat and container glass manufacturing, detergents and soaps, sodium chemicals manufacturing, water treatment, and metallurgy.
+                                </p>
+                            </div>
+                            <div class="bg-slate-950 p-5 rounded-xl border border-slate-800">
+                                <h5 class="text-sm font-semibold text-white mb-2"><i class="fa-solid fa-map-location-dot text-brand-500 mr-2"></i>Export Regions</h5>
+                                <p class="text-xs text-slate-400 leading-relaxed">
+                                    Middle East, South Asia, Africa, CIS Region, and Europe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Calcium Chloride & LAB -->
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Calcium Chloride -->
+                    <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl flex flex-col justify-between" id="calcium-chloride">
+                        <div>
+                            <div class="p-6 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-snowflake"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">7. Calcium Chloride (CaCl₂)</h3>
+                                </div>
+                                <span class="px-2.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 font-mono text-xs">HS Code: 2827.20</span>
+                            </div>
+                            <div class="p-6 space-y-4">
+                                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs space-y-2">
+                                    <div class="flex justify-between border-b border-slate-800 pb-1.5"><span class="text-slate-400">Flakes / Powder:</span><span class="text-slate-200 font-semibold">74% – 78% / 94% – 97% min</span></div>
+                                    <div class="flex justify-between border-b border-slate-800 pb-1.5"><span class="text-slate-400">Alkali Metal Chlorides:</span><span class="text-slate-200 font-semibold">≤ 2.0% – 5.0% wt</span></div>
+                                    <div class="flex justify-between"><span class="text-slate-400">Magnesium (Mg):</span><span class="text-slate-200 font-semibold">≤ 0.5% wt</span></div>
+                                </div>
+                                <p class="text-xs text-slate-400">
+                                    <strong>Applications:</strong> Oilfield drilling muds, completion fluids, road de-icing, dust suppression, industrial desiccant, and concrete acceleration.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6">
+                            <span class="text-xs text-slate-500"><i class="fa-solid fa-globe mr-1"></i>Markets: CIS, North America, Middle East, Europe.</span>
+                        </div>
+                    </div>
+
+                    <!-- LAB -->
+                    <div class="bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden shadow-xl flex flex-col justify-between" id="lab">
+                        <div>
+                            <div class="p-6 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-b border-slate-800 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl font-bold">
+                                        <i class="fa-solid fa-soap"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-white">8. Linear Alkylbenzene (LAB)</h3>
+                                </div>
+                                <span class="px-2.5 py-1 rounded-full bg-slate-800 border border-slate-700 text-indigo-400 font-mono text-xs">HS Code: 3817.00</span>
+                            </div>
+                            <div class="p-6 space-y-4">
+                                <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-xs space-y-2">
+                                    <div class="flex justify-between border-b border-slate-800 pb-1.5"><span class="text-slate-400">Purity (Linear Alkylbenzene):</span><span class="text-slate-200 font-semibold">≥ 96.0% - 97.0% wt</span></div>
+                                    <div class="flex justify-between border-b border-slate-800 pb-1.5"><span class="text-slate-400">Specific Gravity @ 15.6°C:</span><span class="text-slate-200 font-semibold">0.855 – 0.870</span></div>
+                                    <div class="flex justify-between"><span class="text-slate-400">Bromine Number:</span><span class="text-slate-200 font-semibold">≤ 0.05 – 0.1 g/100g</span></div>
+                                </div>
+                                <p class="text-xs text-slate-400">
+                                    <strong>Applications:</strong> Key precursor for Linear Alkylbenzene Sulfonate (LAS/LABSA) used in household detergent powders, liquid cleaners, and industrial surfactants.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-6 pb-6">
+                            <span class="text-xs text-slate-500"><i class="fa-solid fa-globe mr-1"></i>Markets: India, Turkey, Egypt, UAE, Southeast Asia.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Summary Matrix -->
+    <section id="matrix" class="py-20 bg-slate-900/60 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-2">Master Commercial Matrix</h2>
+                    <p class="text-slate-400 text-sm">Interactive summary of product specifications, HS codes, and target markets.</p>
+                </div>
+                <!-- Interactive Search -->
+                <div class="relative w-full md:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+                    <input type="text" id="matrixSearch" placeholder="Search product, HS code, or market..." class="w-full bg-slate-950 border border-slate-800 rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-200 focus:outline-none focus:border-brand-500 transition-colors">
+                </div>
+            </div>
+
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden shadow-2xl">
+                <div class="overflow-x-auto custom-scrollbar">
+                    <table class="w-full text-left text-sm text-slate-300 border-collapse" id="matrixTable">
+                        <thead class="bg-slate-900 text-slate-400 uppercase text-xs border-b border-slate-800">
+                            <tr>
+                                <th class="p-4">Product</th>
+                                <th class="p-4">HS Code</th>
+                                <th class="p-4">Primary Specification / Grade</th>
+                                <th class="p-4">Main Applications</th>
+                                <th class="p-4">Top Export Target Markets</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/60 text-xs">
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Bitumen (Asphalt)</td>
+                                <td class="p-4 font-mono text-amber-400">2713.20</td>
+                                <td class="p-4">Penetration: 40/50, 60/70, 80/100, 100/120</td>
+                                <td class="p-4 text-slate-400">Road paving, asphalt concrete, waterproofing</td>
+                                <td class="p-4 text-slate-300">India, China, Vietnam, UAE, Kenya, S. Africa</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Base Oils (Virgin & Recycled)</td>
+                                <td class="p-4 font-mono text-blue-400">2710.19.91</td>
+                                <td class="p-4">Virgin (SN 150, 350, 500, BS 150) & Recycled (SN 150, 350, 500)</td>
+                                <td class="p-4 text-slate-400">Automotive & industrial lubricants, processing oils, greases</td>
+                                <td class="p-4 text-slate-300">India, UAE, Turkey, Pakistan, Egypt, Singapore</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Urea Fertilizer</td>
+                                <td class="p-4 font-mono text-emerald-400">3102.10</td>
+                                <td class="p-4">46% Nitrogen (Granular / Prilled)</td>
+                                <td class="p-4 text-slate-400">Crop fertilizer, AdBlue feedstock, resins</td>
+                                <td class="p-4 text-slate-300">India, Brazil, Turkey, Vietnam, East Africa</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Elemental Sulfur</td>
+                                <td class="p-4 font-mono text-yellow-400">2503.00</td>
+                                <td class="p-4">Purity ≥ 99.5% - 99.8% (Granular / Lumps)</td>
+                                <td class="p-4 text-slate-400">Sulfuric acid, DAP/MAP fertilizers, rubber</td>
+                                <td class="p-4 text-slate-300">China, India, Morocco, Tunisia, Jordan</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Caustic Soda</td>
+                                <td class="p-4 font-mono text-purple-400">2815.11 / 12</td>
+                                <td class="p-4">Flakes 98.5%+ / Liquid Lye 50%</td>
+                                <td class="p-4 text-slate-400">Alumina, pulp & paper, soaps, water treatment</td>
+                                <td class="p-4 text-slate-300">Middle East, India, Turkey, Central Asia, W. Africa</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Soda Ash</td>
+                                <td class="p-4 font-mono text-teal-400">2836.20</td>
+                                <td class="p-4">Soda Ash Light & Dense (Na₂CO₃ ≥ 99.2%)</td>
+                                <td class="p-4 text-slate-400">Glass manufacturing, detergents, chemical synthesis</td>
+                                <td class="p-4 text-slate-300">Middle East, South Asia, Africa, CIS Region</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Calcium Chloride</td>
+                                <td class="p-4 font-mono text-cyan-400">2827.20</td>
+                                <td class="p-4">Flakes 74-78% / Powder 94-97% (CaCl₂)</td>
+                                <td class="p-4 text-slate-400">Oilfield drilling fluids, de-icing, desiccants</td>
+                                <td class="p-4 text-slate-300">CIS, North America, Middle East, Europe</td>
+                            </tr>
+                            <tr class="hover:bg-slate-900/50 transition-colors">
+                                <td class="p-4 font-bold text-white">Linear Alkylbenzene (LAB)</td>
+                                <td class="p-4 font-mono text-indigo-400">3817.00</td>
+                                <td class="p-4">Purity ≥ 96.0% (Biodegradable surfactant precursor)</td>
+                                <td class="p-4 text-slate-400">Household and industrial detergent production</td>
+                                <td class="p-4 text-slate-300">India, Turkey, Egypt, UAE, Southeast Asia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Markets & Trade Routes -->
+    <section id="markets" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Global Export Footprint</h2>
+                <p class="text-slate-400 text-lg">Connecting major production facilities to primary global trade hubs across 5 continents.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 text-center">
+                    <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-brand-500/10 text-brand-500 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-ship"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Maritime Bulk Trade</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Full Vessel Charters, Bitumen Tankers, Liquid Chemical Carriers, and Break-bulk logistics via major Middle Eastern export terminals.
+                    </p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 text-center">
+                    <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-brand-accent/10 text-brand-accent flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Containerized Shipping</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Flexitanks for Base Oils/LAB, Jumbo Bags for Granular Urea/Sulfur, ISO Tanks for Liquid Caustic Soda, and Steel Drums for Bitumen.
+                    </p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 text-center">
+                    <div class="w-14 h-14 mx-auto mb-4 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Quality Assurance & Inspection</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        SGS, Geo-Chem, or Intertek certified inspection reports for quality and quantity provided for every batch prior to vessel loading.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Quote / Contact Form -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-60 h-60 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="text-center max-w-2xl mx-auto mb-10">
+                    <h2 class="text-3xl font-extrabold text-white mb-3">Commercial Quote & Specification Inquiry</h2>
+                    <p class="text-slate-400 text-sm">Submit your required product specifications, volume, discharge port, and target Incoterms (FOB / CFR / CIF).</p>
+                </div>
+
+                <form id="quoteForm" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Full Name / Contact Person</label>
+                            <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Corporate Email</label>
+                            <input type="email" required placeholder="procurement@company.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Product Interested In</label>
+                            <select id="productSelect" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500">
+                                <option>Bitumen 60/70 (Penetration Grade)</option>
+                                <option>Bitumen Other Grades (40/50, 80/100, etc.)</option>
+                                <option>Virgin Base Oils Group I (SN 150 / SN 350 / SN 500 / BS 150)</option>
+                                <option>Recycled Base Oils (Recycle SN 150 / SN 350 / SN 500)</option>
+                                <option>Granular / Prilled Urea 46% N</option>
+                                <option>Elemental Sulfur (Granular/Lump)</option>
+                                <option>Caustic Soda Flakes 99% / Lye 50%</option>
+                                <option>Soda Ash Light / Dense</option>
+                                <option>Calcium Chloride 74-78% / 94-97%</option>
+                                <option>Linear Alkylbenzene (LAB)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Required Quantity (MT)</label>
+                            <input type="number" required placeholder="e.g. 5000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Port of Destination & Preferred Incoterm</label>
+                        <input type="text" placeholder="e.g. CFR Nhava Sheva, India or CIF Shanghai" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Specific Technical Requirements / Message</label>
+                        <textarea rows="4" placeholder="Detail any specific testing parameters or packaging preferences (Drums, Flexitank, Jumbo Bags, Bulk)..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-brand-500"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-base transition-all shadow-lg shadow-brand-600/30 flex items-center justify-center gap-2">
+                        <i class="fa-paper-plane fa-solid"></i> Submit Formal RFQ
+                    </button>
+                </form>
+
+                <!-- Feedback Message -->
+                <div id="formStatus" class="hidden mt-6 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm text-center">
+                    <i class="fa-solid fa-circle-check mr-2"></i> Thank you. Your quote request has been received. Our commercial trade desk will respond within 24 business hours.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center font-bold text-white text-sm">
+                    PK
+                </div>
+                <div>
+                    <span class="text-sm font-bold text-slate-200 block">PETRO ARKAN & KIA PETRO</span>
+                    <span class="text-slate-500">Joint Commercial Operations Desk</span>
+                </div>
+            </div>
+            <p>© 2026 Petro Arkan & Kia Petro. All Technical & Commercial Specifications Reserved.</p>
+            <div class="flex space-x-6 text-slate-400 text-sm">
+                <a href="#overview" class="hover:text-white transition-colors">Overview</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Products</a>
+                <a href="#matrix" class="hover:text-white transition-colors">Matrix</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Master Summary Matrix Search Filter
+        const matrixSearch = document.getElementById('matrixSearch');
+        const matrixTable = document.getElementById('matrixTable');
+        const rows = matrixTable.querySelectorAll('tbody tr');
+
+        matrixSearch.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+
+        // RFQ Form Handling
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            const formStatus = document.getElementById('formStatus');
+            formStatus.classList.remove('hidden');
+            document.getElementById('quoteForm').reset();
+            setTimeout(() => {
+                formStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+        }
+    </script>
+</body>
+</html>
